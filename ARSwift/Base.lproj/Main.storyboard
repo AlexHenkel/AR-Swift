@@ -21,16 +21,47 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ey4-FB-rnL">
                                 <rect key="frame" x="64" y="0.0" width="597" height="414"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="j8e-Dc-6dP" appends="YES" id="lKe-7m-vuq"/>
+                                </connections>
                             </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jAc-oG-EUc">
+                                <rect key="frame" x="669" y="20" width="105" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Mostrar cohete"/>
+                                <connections>
+                                    <action selector="handleRocketButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YlZ-Ap-iLr"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cFA-vg-916">
+                                <rect key="frame" x="669" y="58" width="213" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                </segments>
+                                <connections>
+                                    <action selector="handleStyleChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="w8M-tr-MHT"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="rocketButton" destination="jAc-oG-EUc" id="a28-ar-jvU"/>
                         <outlet property="sceneView" destination="ey4-FB-rnL" id="xd8-kB-xWN"/>
+                        <outlet property="stylesControl" destination="cFA-vg-916" id="qxC-kq-kZI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="j8e-Dc-6dP">
+                    <connections>
+                        <action selector="handleTap:" destination="BYZ-38-t0r" id="EE4-gP-14L"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="138.61607142857142" y="126.08695652173914"/>
         </scene>
