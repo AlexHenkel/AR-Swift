@@ -12,6 +12,12 @@
 		B52F7709225C4CAA00C6CA5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B52F7707225C4CAA00C6CA5C /* Main.storyboard */; };
 		B52F770B225C4CAB00C6CA5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B52F770A225C4CAB00C6CA5C /* Assets.xcassets */; };
 		B52F770E225C4CAB00C6CA5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B52F770C225C4CAB00C6CA5C /* LaunchScreen.storyboard */; };
+		B52F771B225C4F7100C6CA5C /* mosaic_style.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B52F7715225C4F7000C6CA5C /* mosaic_style.mlmodel */; };
+		B52F771C225C4F7100C6CA5C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B52F7716225C4F7100C6CA5C /* art.scnassets */; };
+		B52F771D225C4F7100C6CA5C /* StyleTransferInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52F7717225C4F7100C6CA5C /* StyleTransferInput.swift */; };
+		B52F771E225C4F7100C6CA5C /* udnie_style.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B52F7718225C4F7100C6CA5C /* udnie_style.mlmodel */; };
+		B52F771F225C4F7100C6CA5C /* UIImage+scaling.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52F7719225C4F7100C6CA5C /* UIImage+scaling.swift */; };
+		B52F7720225C4F7100C6CA5C /* wave_style.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B52F771A225C4F7100C6CA5C /* wave_style.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		B52F770A225C4CAB00C6CA5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B52F770D225C4CAB00C6CA5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B52F770F225C4CAB00C6CA5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B52F7715225C4F7000C6CA5C /* mosaic_style.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = mosaic_style.mlmodel; sourceTree = "<group>"; };
+		B52F7716225C4F7100C6CA5C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		B52F7717225C4F7100C6CA5C /* StyleTransferInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleTransferInput.swift; sourceTree = "<group>"; };
+		B52F7718225C4F7100C6CA5C /* udnie_style.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = udnie_style.mlmodel; sourceTree = "<group>"; };
+		B52F7719225C4F7100C6CA5C /* UIImage+scaling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+scaling.swift"; sourceTree = "<group>"; };
+		B52F771A225C4F7100C6CA5C /* wave_style.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = wave_style.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,12 @@
 		B52F7702225C4CAA00C6CA5C /* ARSwift */ = {
 			isa = PBXGroup;
 			children = (
+				B52F7716225C4F7100C6CA5C /* art.scnassets */,
+				B52F7715225C4F7000C6CA5C /* mosaic_style.mlmodel */,
+				B52F7717225C4F7100C6CA5C /* StyleTransferInput.swift */,
+				B52F7718225C4F7100C6CA5C /* udnie_style.mlmodel */,
+				B52F7719225C4F7100C6CA5C /* UIImage+scaling.swift */,
+				B52F771A225C4F7100C6CA5C /* wave_style.mlmodel */,
 				B52F7703225C4CAA00C6CA5C /* AppDelegate.swift */,
 				B52F7705225C4CAA00C6CA5C /* ViewController.swift */,
 				B52F7707225C4CAA00C6CA5C /* Main.storyboard */,
@@ -123,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B52F770E225C4CAB00C6CA5C /* LaunchScreen.storyboard in Resources */,
+				B52F771C225C4F7100C6CA5C /* art.scnassets in Resources */,
 				B52F770B225C4CAB00C6CA5C /* Assets.xcassets in Resources */,
 				B52F7709225C4CAA00C6CA5C /* Main.storyboard in Resources */,
 			);
@@ -135,8 +154,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B52F771E225C4F7100C6CA5C /* udnie_style.mlmodel in Sources */,
+				B52F771F225C4F7100C6CA5C /* UIImage+scaling.swift in Sources */,
 				B52F7706225C4CAA00C6CA5C /* ViewController.swift in Sources */,
+				B52F771D225C4F7100C6CA5C /* StyleTransferInput.swift in Sources */,
 				B52F7704225C4CAA00C6CA5C /* AppDelegate.swift in Sources */,
+				B52F7720225C4F7100C6CA5C /* wave_style.mlmodel in Sources */,
+				B52F771B225C4F7100C6CA5C /* mosaic_style.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
